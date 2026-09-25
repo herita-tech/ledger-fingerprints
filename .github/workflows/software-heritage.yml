@@ -1,0 +1,31 @@
+# Asks Software Heritage (archive.softwareheritage.org) to take a fresh copy of this repository,
+# every branch included. The fingerprints branch then exists in an archive nobody at Herita
+# can edit or delete, with a content-addressed identifier (SWHID) per commit. The archive is
+# for availability: the time of each fingerprint is already fixed by its OpenTimestamps proof.
+#
+# Daily, not per push: the publisher commits every hour and Software Heritage asks callers to
+# be sparing with save requests. A day's lag is fine for an availability copy.
+name: software-heritage
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+permissions: {}
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request an archive of this repository
+        env:
+          ORIGIN: https://github.com/${{ github.repository }}
+        run: |
+          set -euo pipefail
+          url="https://archive.softwareheritage.org/api/1/origin/save/git/url/${ORIGIN}/"
+          response=$(curl -sS --fail-with-body -X POST "$url")
+          echo "$response"
+          status=$(echo "$response" | jq -r '.save_request_status')
+          case "$status" in
+            accepted|pending) ;;
+            *) echo "save request not accepted: $status" >&2; exit 1 ;;
+          esac
+          echo "Previous requests: https://archive.softwareheritage.org/browse/origin/directory/?origin_url=${ORIGIN}"

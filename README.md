@@ -83,6 +83,18 @@ note and its ledger record:
 > 6. Report the verdict and every line under "notes" and "What this run cannot prove" exactly as
 >    printed. Do not summarise a failure as a pass.
 
+## Keeping your own copy
+
+Nothing here depends on GitHub staying up or on Herita keeping this repository. A holder of a
+ledger record already has that record's fingerprint, signature and proof inside the PDF. For
+everything else, hold the whole history yourself: `git clone` this repository and run `git fetch`
+on a schedule, and you have an independent copy of every fingerprint ever published.
+
+Software Heritage, the public archive run by Inria with UNESCO, also takes a copy of this
+repository every day at Herita's request (`.github/workflows/software-heritage.yml`). Every commit
+there carries a permanent identifier (a SWHID) that a report can cite:
+<https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/herita-tech/ledger-fingerprints>
+
 ## The verifier
 
 `verifier/verify-ledger.js` is one self-contained JavaScript file with no dependencies beyond the
