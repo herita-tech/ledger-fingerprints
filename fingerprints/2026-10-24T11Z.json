@@ -1,0 +1,12 @@
+{
+  "v": 2,
+  "tick": "2026-10-24T11:00:00.000Z",
+  "coreHash": "9b80a72368205e54bbb731e3778a652d939672e8fc758aee54a93424f89bba81",
+  "prevCoreHash": "92ed694c44d348093b36b65dedc75ce6afc210ddec5c535a1b8355c5f832a9c1",
+  "signature": {
+    "keyId": "1189873e644ebe4df5b8a2628bff33417b8b3648edbea99ab1967a651dadbf45",
+    "algorithm": "ECDSA_SHA_256",
+    "value": "MEUCICO/WCk2aDzriPGKWCpWfuvKVMY4Dan5b0WwE/zl0KH9AiEAky0qDimZshSSHpTM3PdwPEH/HpqHNtCQ2Q1BmgMw2Ag="
+  },
+  "witnesses": []
+}
