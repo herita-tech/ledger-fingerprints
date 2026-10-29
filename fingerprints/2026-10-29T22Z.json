@@ -1,0 +1,12 @@
+{
+  "v": 2,
+  "tick": "2026-10-29T22:00:00.000Z",
+  "coreHash": "cdd9e811d01fe65b40be444fc3a872aedd57a6ac943fdc88ff850232d22de066",
+  "prevCoreHash": "6c85090f4ce75f533e23efb867a1d20a6c5be22ed96c615947bdfd706318b036",
+  "signature": {
+    "keyId": "1189873e644ebe4df5b8a2628bff33417b8b3648edbea99ab1967a651dadbf45",
+    "algorithm": "ECDSA_SHA_256",
+    "value": "MEUCIQDAGjDtebQ7wBu4Lg9Ig196yz9wycHbUS3F+lZMwmfPBwIgN2hbBGd05IOoTmt4yHflWC/DyHWEC6hhNEwZqpwpO/U="
+  },
+  "witnesses": []
+}
