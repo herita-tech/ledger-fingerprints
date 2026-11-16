@@ -1,12 +1,12 @@
 {
   "v": 2,
-  "tick": "2026-11-16T04:00:00.000Z",
-  "coreHash": "308ee6a2eb71b0c56b8d78dc0ed328716b88f0ae353fd62ae6d492524b1aee5b",
-  "prevCoreHash": "6ceecde72dc54b0b7636ed99a6fc8e2bcac0eae78741b80ccec9e3d5a5ef3921",
+  "tick": "2026-11-16T05:00:00.000Z",
+  "coreHash": "620d6ef2731d1027ce12b006f235ebaaed87c2d1b0795d41d17d29b1a2e5dd45",
+  "prevCoreHash": "308ee6a2eb71b0c56b8d78dc0ed328716b88f0ae353fd62ae6d492524b1aee5b",
   "signature": {
     "keyId": "1189873e644ebe4df5b8a2628bff33417b8b3648edbea99ab1967a651dadbf45",
     "algorithm": "ECDSA_SHA_256",
-    "value": "MEYCIQC6bqof6EtuEbqzh5AineOjscuBHtJTM6MWfFN9f+gBywIhAPz3JveNUgTP49SNd6G7AffqMvEBliGj33UMQRa8IABB"
+    "value": "MEUCIQCfdTi8XMNG6sDOu+Ng/TFpNaf0WtLRX5l+9t7YC8jyHgIgYcmqrwbyzQkw9oChq0mSci0YQVW6ZOwLSI2so+xtvpE="
   },
   "witnesses": []
 }
